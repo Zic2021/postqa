@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postQa - Note app</title>
+    <meta name="description" content="postqa is a note app made for developers and other individuals to store their questions and answers.">
+    <meta name="keywords" content="Note app, code snippet, store question and answers, store coding questions and answers">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div>
+        <header class="same-margin-width">
+            <h1>postQa</h1>
+            <h2 id="hamburger">|||</h2>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="homepage same-margin-width" id="home">
+                <div>
+                    <h2>Qa for developers and you</h2>
+                    <p>store your most asked questions with answers for free</p>
+                    <a href="note.html">get started</a>
+                </div>
+                <img src="images/devworking.png" alt="developer working">
+            </div>
+            <div class="about">
+           <div class="circle" id="about"><h3>about</h3></div>
+           <p>Postqa(post questions and answers) is a note app made to store questions and answers for developers and others. The goal is to solve one thing;  to keep you from asking the same question over and over by storing your questions and answers on your web browser to reference for later.
+           </p>
+           </div>
+           <div id="contact" class="contact same-margin-width">
+                <div class="circle"><h3>contact</h3></div>
+                <form action="https://formsubmit.co/zic@postqa.com" method="POST">
+                    <input type="text" name="name" placeholder="name"required>
+                    <input type="email" name="email" placeholder="email"required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://postqa.com/thanks.html">
+                    <button type="submit">send</button>
+                 </form>
+            </div>
+        </main>
+        <footer>
+            <div class="links">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+                <a href="donate.html">make a difference</a>
+            </div>
+            <p>Any suggestion? <br> reach out at suggestion@postqa.com</p>
+        </footer>
+        <div class="bottom"><h5>Made with one hand by <a href="https://www.instagram.com/thebadvilain/" target="_blank">zic</a></h5></div>
+    </div>
+</body>
+</html>

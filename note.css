@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    background-color: #DADDFC;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 99vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DADDFC;
+}
+.header #addnewnote{
+    width: 25px;
+    height: 30px;
+    margin-left: 12px;
+    font-size: 20px;
+    background-color: #101010;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.header .search input{
+    height: 32px;
+    width: 45vw;
+    position: absolute;
+    right: 1%;
+    z-index: -1;
+    padding-right: 40px;
+}
+.search{
+    margin-right: 18px;
+}
+@media (max-width: 500px) {
+    .search input{
+        width: 55vw;
+    }
+    .search{
+        margin-right: 5px;
+    }
+}
+.note-hide{
+    display: none;
+}
+.show-form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #DADDFC;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: absolute;
+}
+#noteapp input, textarea{
+    width: 50vw;
+    margin-top: 10px;
+    padding: 5px;
+}
+#noteapp button{
+    background-color: #101020;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+}
+/*flip card*/
+#card-container{
+    margin-top: 50px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #000;
+    /*width: 100vw;*/
+}
+.newDiv{
+    margin: 10px;
+    background-color: #101010;
+    border: 1px solid aqua;
+    border-bottom: 3px double #fff;
+    width: 350px;
+    height: 350px;
+    border-radius: 1%;
+    color:brown;
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    position: relative;
+}
+#card-container .newDiv:hover{
+    transform: rotateY(180deg);
+    border-bottom: 2px double #fff;
+}
+.newTitle{
+    height: 99%;
+    color: #fff;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    backface-visibility: hidden;
+}
+.newNote{
+    height: 90%;
+    margin-right: 2px;
+    color: #fff;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+.delete{
+    transform: rotateY(180deg);
+    width: 30px;
+    height: 30px;
+    align-self: flex-end;
+    margin: 3px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-image: url("images/delete.png");
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} 
+.edit{
+    background-image: url("images/editbtn.png");
+    transform: rotateY(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-color: #101010;
+    border: none;
+}
+/*.updown{
+    transform: rotateY(180deg);
+    position: absolute;
+    bottom: -2%;
+    left: 50%;
+    outline: none;
+    border: none;
+    background-color: #DADDFC;
+    background-image: url("downbtn.png");
+    width: 32px;
+    height: 28px;
+}
+.updownrotate{
+    transform: rotate(90deg);
+}
+.hideElement{
+    display: none;
+}*/
