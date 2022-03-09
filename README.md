@@ -1,5 +1,5 @@
 # postqa
-postqa is a note app made for anyone who wants to store their questions and answers on the web browser.
+Postqa is a note app made for anyone who wants to store their questions and answers on the web browser.
 I have built this website for me, because I found it difficult to store my coding snippets on google doc or notepad.
 That is why I made this site to help me store my questions and answers.
 
